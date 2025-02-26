@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>イベントカレンダー</title>
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="calendar-wrap">
+        <table class="calendar">
+            <thead>
+              <tr class="hachi-maru-pop-regular">
+                <th class="sun">Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th class="sat">Sat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="hachi-maru-pop-regular">
+                <td class="mute">23</td>
+                <td class="mute">24</td>
+                <td class="mute"  class="today">25</td>
+                <td class="mute">26</td>
+                <td class="mute">27</td>
+                <td class="mute">28<p style="color: brown; background-color: rgb(199, 253, 246);">ツバキ展</p></td>
+                <td>1<p style="color: brown; background-color: rgb(199, 253, 246);">ツバキ展</p></td>
+              </tr>
+              <tr class="hachi-maru-pop-regular">
+                <td>2<p style="color: brown; background-color: rgb(199, 253, 246);">ツバキ展</p></td>
+                <td>3<br><img src="images/flower0749.png" width="30px"></td>
+                <td>4<br><img src="images/doubutu_ohanawomotusirousagi.png" width="50px"></td>
+                <td>5<br><img src="images/b8bc38ee7d484691bb90c15e9a5d2a4c.png" width="65px"></td>
+                <td>6<br><img src="images/flower0137.png" width="65px"></td>
+                <td>7<br><img src="images/flower0749.png" width="30px"></td>
+                <td>8<p style="color: rgb(221, 97, 122); background-color: rgb(250, 245, 173);">春ラン展</p></td>
+              </tr>
+              <tr class="hachi-maru-pop-regular">
+                <td>9<p style="color: rgb(221, 97, 122); background-color: rgb(250, 245, 173);">春ラン展</p></td>
+                <td>10<br><img src="images/flower0137.png" width="60px"></td>
+                <td>11<br><img src="images/flower2623.png" width="50px"></td>
+                <td>12<br><img src="images/flower0749.png" width="30px" style="margin-top: 10px;"></td>
+                <td>13<p style="color: rgb(255, 20, 79); background-color: rgb(159, 253, 187);">春のガーデニング展</p></td>
+                <td>14<p style="color: rgb(255, 20, 79); background-color: rgb(159, 253, 187);">春のガーデニング展</p></td>
+                <td>15<p style="color: rgb(255, 20, 79); background-color: rgb(159, 253, 187);">春のガーデニング展</p></td>
+              </tr>
+              <tr class="hachi-maru-pop-regular">
+                <td>16<p style="color: rgb(255, 20, 79); background-color: rgb(159, 253, 187);">春のガーデニング展</p></td>
+                <td>17<br><img src="images/b8bc38ee7d484691bb90c15e9a5d2a4c.png" width="65px"></td>
+                <td>18<br><img src="images/doubutu_ohanawomotusirousagi.png" width="50px"></td>
+                <td>19<br><img src="images/flower0137.png" width="70px"></td>
+                <td class="sun">20<p style="color: chocolate; background-color: rgb(216, 220, 253);">友の会　早春の展示・即売会</p></td>
+                <td>21<p style="color: chocolate; background-color: rgb(216, 220, 253);">友の会　早春の展示・即売会</p></td>
+                <td>22<p style="color: chocolate; background-color: rgb(216, 220, 253);">友の会　早春の展示・即売会</p></td>
+              </tr>
+              <tr class="hachi-maru-pop-regular">
+                <td>23<p style="color: chocolate; background-color: rgb(216, 220, 253);">友の会　早春の展示・即売会</p></td>
+                <td>24<br><img src="images/flower0749.png" width="35px" style="margin-top: 10px;"></td>
+                <td>25<br><img src="images/flower2623.png" width="55px"></td>
+                <td>26<br><img src="images/b8bc38ee7d484691bb90c15e9a5d2a4c.png" width="70px"></td>
+                <td>27<p style="color: rgb(100, 85, 190); background-color: rgb(212, 252, 172);">むつみの生き物　写真展</p></td>
+                <td>28<p style="color: rgb(100, 85, 190); background-color: rgb(212, 252, 172);">むつみの生き物　写真展</p></td>
+                <td>29<p style="color: rgb(100, 85, 190); background-color: rgb(212, 252, 172);">むつみの生き物　写真展</p></td>
+              </tr>
+              <tr class="hachi-maru-pop-regular">
+                <td>30<p style="color: rgb(100, 85, 190); background-color: rgb(212, 252, 172);">むつみの生き物　写真展</p></td>
+                <td>31<p style="color: rgb(100, 85, 190); background-color: rgb(212, 252, 172);">むつみの生き物　写真展</p></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <script>
+        const date = new Date();
+const today = date.getDate();
+const currentMonth = date.getMonth();
+
+function createCalendar(month) {
+    const monthDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    let calendarHTML = '<table class="calendar"><thead><tr>';
+
+    for (let i = 0; i < 7; i++) {
+        if (i === 0) {
+            calendarHTML += `<th class="sun">${monthDays[i]}</th>`;
+        } else if (i === 6) {
+            calendarHTML += `<th class="sat">${monthDays[i]}</th>`;
+        } else {
+            calendarHTML += `<th>${monthDays[i]}</th>`;
+        }
+    }
+
+    calendarHTML += '</tr></thead><tbody>';
+
+    const daysInMonth = new Date(date.getFullYear(), month + 1, 0).getDate();
+    const firstDay = new Date(date.getFullYear(), month, 1).getDay();
+
+    const daysInPrevMonth = new Date(date.getFullYear(), month, 0).getDate();
+
+    let dayCount = 1;
+    let prevDayCount = daysInPrevMonth - firstDay + 1;
+
+    for (let i = 0; i < 6; i++) {
+        calendarHTML += '<tr>';
+
+        for (let j = 0; j < 7; j++) {
+            if (i === 0 && j < firstDay) {
+                calendarHTML += `<td class="mute">${prevDayCount}</td>`;
+                prevDayCount++;
+            } else if (dayCount > daysInMonth) {
+                let nextMonthDayCount = dayCount - daysInMonth;
+                calendarHTML += `<td class="mute">${nextMonthDayCount}</td>`;
+                dayCount++;
+            } else {
+                if (dayCount === today && month === currentMonth) {
+                    calendarHTML += `<td class="today">${dayCount}</td>`;
+                } 
+            }
+        }
+            calendarHTML += '</tr>';
+
+        if (dayCount - daysInMonth > 7) {
+            break;
+        }
+    }
+
+    calendarHTML += '</tbody></table>';
+
+    return calendarHTML;
+}
+
+document.getElementById('calendar').innerHTML = createCalendar(currentMonth) + createCalendar(currentMonth + 1);
+    </script>
+</body>
+</html>
