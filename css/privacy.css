@@ -1,0 +1,72 @@
+@charset "utf-8";
+#pri{
+    text-align: center;
+    margin-left: 100px;
+}
+#pvc h2{
+    text-align: center;
+    margin-left: 370px;
+}
+#pp{
+    color: red;
+    text-align: center;
+}
+#to{
+    text-align: center;
+   width: 50%;
+   margin-left: 25%;
+}
+.pc-disabled {
+    display: block;
+  }
+
+@media screen and (max-width:767px){
+    #privacy{
+        padding-right: 50px;
+        text-align: left;
+        
+    }
+    #pri h1{
+        text-align: left;
+        font-size: larger;
+    
+    }
+    .pc-disabled {
+        display: block;
+      }
+    #pri{
+        margin-left: 0;
+    }
+    #pri p{
+        text-align: left;
+        font-size: 105%;
+    }
+    #toti{
+        width: 480px;
+    }
+    #pvc h2{
+        width: 480px;
+        font-size: larger;
+        margin-left: 0;
+        text-align: left;
+    }
+    #to{
+        text-align: left;
+       width: 105%;
+       margin-left: 0;
+    }
+    #saito{
+        text-align: left;
+        width: 105%;
+    }
+    #utu{
+        text-align: center;
+    }
+    #web{
+        text-align: left;
+        width: 110%;
+    }
+    #pp{
+        text-align: left;
+    }
+}

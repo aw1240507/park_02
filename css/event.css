@@ -1,0 +1,195 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+@import url("common.css");
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap');
+header{
+    margin-left: 30%;
+}
+nav{
+    margin-left: 450px;
+}
+header h1{
+    margin: 0;
+    padding: 70px 0 0px 0;
+    text-align: center;
+    font-family: '栃木中央公園-Tochigi Central Park-', cursive;
+}
+header #con{
+    display: flex;
+}
+header img{
+    width: 150px;
+}
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li{
+    width: 140px;
+    border: 1px solid green;
+    float: left;
+    font-weight: bold;
+}
+
+nav ul li a{
+    display: block;
+    padding: 15px 0;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    color: green;
+}
+nav ul li a:hover{
+    background-color: greenyellow;
+    color: white;
+}
+#main article h1,h2{
+    font-size: 22px;
+    width: 730px;
+    border-bottom: 3px dotted green;
+}
+#main{
+    margin-left: 30%;
+    margin-top: 7%;
+}
+#main h1{
+    width: 68%;
+    border-bottom: 3px dotted green;
+}
+footer{
+    width: 48%;
+    text-align: center;
+    background-color: greenyellow;
+    padding-bottom: 5px;
+    margin-left: 30%;
+}
+
+address {
+	padding-top: 15px;
+	border-top: 1px solid #cccccc;
+	clear: both;
+	font-style: normal;
+	text-align: center;
+}
+#pagetop{
+    margin-left: 1070px;
+   }
+   
+.calendar-wrap {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-left: 100px;
+}
+.calendar {
+  width: 500px;
+  border-collapse: collapse;
+}
+.calendar th,
+.calendar td {
+  border: 4px double rgb(1, 166, 59);
+  text-align: center;
+  padding: 0px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.calendar th {
+  padding: 0px 0px;
+}
+
+.calendar .sun {
+  color: #e17f7e;
+  background-color: #f8e4e2;
+}
+.calendar .sat {
+  color: #7ab6f3;
+  background-color: #e7f6fd;
+}
+.calendar .mute {
+  color: #aaa;
+}
+.calendar .today {
+  background-color: #7d7d7d;
+}
+.hachi-maru-pop-regular {
+  font-family: "Hachi Maru Pop", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@media screen and (max-widht:767px){
+  header{
+    margin-left: 30%;
+}
+nav{
+    margin-left: 50px;
+}
+header h1{
+    margin: 0;
+    padding: 70px 0 0px 0;
+    text-align: center;
+    font-family: '栃木中央公園-Tochigi Central Park-', cursive;
+}
+header #con{
+    display: flex;
+}
+header img{
+    width: 150px;
+}
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+nav ul li{
+    width: 100px;
+    border: 1px solid green;
+    float: left;
+    font-weight: bold;
+}
+nav ul li a{
+    display: block;
+    padding: 15px 0;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    color: green;
+}
+nav ul li a:hover{
+    background-color: greenyellow;
+    color: white;
+}
+#main article h1,h2{
+    font-size: 22px;
+    width: 730px;
+    border-bottom: 3px dotted green;
+}
+#main{
+    margin-left: 0%;
+    margin-top: 7%;
+}
+#main h1{
+    width: 68%;
+    border-bottom: 3px dotted green;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: greenyellow;
+    padding-bottom: 5px;
+    margin-left: 0%;
+}
+address {
+	padding-top: 15px;
+	border-top: 1px solid #cccccc;
+	clear: both;
+	font-style: normal;
+	text-align: center;
+}
+#pagetop{
+    margin-left: 320px;
+   }
+   
+ 
+}
+

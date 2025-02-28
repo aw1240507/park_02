@@ -1,0 +1,284 @@
+@charset "utf-8";
+@import url("common.css");
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap');
+
+
+/*基本ページここから*/
+
+header{
+    margin-left: 30%;
+}
+nav{
+    margin-left: 450px;
+}
+header h1{
+    margin: 0;
+    padding: 70px 0 0px 0;
+    text-align: center;
+    font-family: '栃木中央公園-Tochigi Central Park-', cursive;
+}
+header #con{
+    display: flex;
+}
+header img{
+    width: 150px;
+}
+.p{
+    color: green;
+    font-weight: bold;
+}
+/*nav ul li{
+    float: left;
+    list-style-type: none;
+    width: 140px;
+    overflow: hidden;
+    text-align: center;
+}*/
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li{
+    width: 140px;
+    border: 1px solid green;
+    float: left;
+    font-weight: bold;
+}
+
+nav ul li a{
+    display: block;
+    padding: 15px 0;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    color: green;
+}
+nav ul li a:hover{
+    background-color: greenyellow;
+    color: white;
+}
+#graphic{
+    margin-left: 30%;
+}
+#graphic ul li img{
+    width: 730px;
+    height: 400px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px;
+}
+#news ul li{
+    list-style-type: none;
+    padding-left: 0px;
+
+}
+#main article h1,h2{
+    font-size: 22px;
+    width: 730px;
+    border-bottom: 3px dotted green;
+}
+#sub h1{
+    font-size: 22px;
+    width: 730px;
+    border-bottom: 3px dotted green;
+}
+
+#main{
+    margin-left: 30%;
+    margin-top: 7%;
+}
+#main h1{
+    width: 68%;
+    border-bottom: 3px dotted green;
+}
+#sub{
+    margin-left: 30%;
+}
+#main #news ul {
+    padding-left: 0px;
+}
+footer{
+    width: 48%;
+    text-align: center;
+    background-color: greenyellow;
+    padding-bottom: 5px;
+    margin-left: 30%;
+}
+
+address {
+	padding-top: 15px;
+	border-top: 1px solid #cccccc;
+	clear: both;
+	font-style: normal;
+	text-align: center;
+}
+
+#pagetop{
+ margin-left: 1070px;
+}
+#breadcrumb{
+    margin-left: 500px;
+    height: 5px;
+}
+#breadcrumb ul {
+	list-style-type: none;
+	margin-bottom: 20px;
+	padding: 0;
+}
+#breadcrumb ul li {
+	display: inline;
+	margin-right: 5px;
+}
+#breadcrumb ul li a {
+	padding-right: 15px;
+}
+
+
+
+
+@media screen and (max-width:1280px) {
+   
+}
+
+@media screen and (min-width:768px) and (max-width:1279px) {
+    
+}
+
+@media screen and (max-width:767px) {
+    #s{
+        margin-left: 0px;
+    }
+
+ 
+    #main {
+        width: 550px;
+    }
+    #main article h1,h2{
+        font-size: 22px;
+        width: 550px;
+        border-bottom: 3px dotted green;
+    }
+    #sub h1{
+        font-size: 22px;
+        width: 550px;
+        border-bottom: 3px dotted green;
+    }
+    article p{
+        margin-left: 0px;
+    }
+    
+    #graphic ul li img{
+        width: 470px;
+        height: 300px;
+        border-radius: 30px;
+        box-shadow: 0 10px 30px;
+        margin-left: 0px;
+        
+    }
+    #l{
+     margin-top: 20px;
+      display: block;
+        
+    }
+    #sub p{
+        margin-left: 0px;
+    }
+    nav ul li{
+        width: 410px;
+        border: 1px solid green;
+        float: left;
+        font-weight: bold;
+        margin-left: 0%;
+    }
+    header h1{
+        margin: 0px;
+        margin-left: 0px;
+    }
+    table tr th:nth-child(2), table tr td:nth-child(2) {
+        width: 250px;
+    }
+    
+    #contents{
+        margin-left: 0px;
+    }
+    
+    #main{
+        margin-left: 0px;
+    }
+    
+    #sub{
+        margin-left: 0px;
+    }
+    nav ul li{
+        margin-left: 0px;
+    }
+    iframe{
+        margin-left: 0%;
+        width: 450px;
+    }
+    article{
+        margin-left: 0px;
+    }
+
+
+    #main h1{
+        width: 500px;
+        font-size: 23px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    #main p{
+        width: 450px;
+    }
+    nav{
+        margin-right: 100px;
+        width: 490px;
+        margin-left: 0;
+    }
+    footer{
+        margin-left: 15px;
+        width: 450px;
+    }
+    header{
+        margin-left: 0%;
+    }
+    
+    #graphic{
+        margin-left: 0%;
+    }
+    #pagetop{
+      margin-left: 330px;
+    }
+    #main{
+        margin-left: 0%;
+        margin-top: 7%;
+    }
+    #news ul{
+        margin-left: 0;
+    }
+    #breadcrumb{
+        margin-left: 20px;
+    }
+    #to,#web,#saito{
+     br{
+        display: none;
+    }}
+    
+    #pp{
+        br{
+            display: block;
+        }}
+    #utu{
+            br{
+                display: block;
+            }
+            }
+    /*#sub{
+        margin-left: 30%;
+    }
+   
+    aside{
+        margin-left: 0px;
+    }
+        */
+}
