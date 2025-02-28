@@ -1,0 +1,60 @@
+@charset "utf-8";
+input[type="text"]{
+    width: 200px;
+    margin-left: 20px;
+}
+input[type="email"]{
+    width: 280px;
+    margin-left: 20px;
+}
+textarea{
+    margin-left: 20px;
+}
+input[type="checkbox"]{
+    margin-left: 20px;
+}
+span{
+    color: red;
+}
+.button014 a {
+    background: #eee;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 40px;
+    max-width: 90px;
+    padding: 3px 6px;
+    color: #664d4d;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.button014 a::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 4px dotted green;
+  transition: 0.2s;
+}
+
+.button014 a::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #333333;
+  border-right: 3px solid #333333;
+  transform: rotate(45deg);
+}
+
+.button014 a:hover::before {
+  top: 0;
+  left: 0;
+}
+
+.button014 a:hover {
+  text-decoration: none;
+  background-color: #cbffb3;
+}
