@@ -1,0 +1,74 @@
+@charset "utf-8";
+section h2{
+    text-align: left;
+    font-size: 180%;
+    border-bottom: 1px dotted green;
+    border-width: 3px;
+}
+
+section p{
+    font-size: 125%;
+}
+#kisoku ul li{
+    list-style-type: square;
+}
+#kisoku{
+    width: 65%;
+    border: 2px solid green;
+}
+#kyoka{
+    width: 65%;
+}
+#ex{
+    border: 1px solid green;
+}
+#img figure img{
+   width: 100%;
+}
+#i{
+    text-align: center;
+}
+#j{
+    margin-left: 5px;
+}
+#u{
+    margin-left: 200px;
+}
+.box figure{
+    width: 180px;
+    margin: 0 0 15px 0px;
+    float: left;
+}
+.box {
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+
+
+
+
+@media screen and (max-width:767px) {
+    #kisoku{
+        margin-left: 60px;
+    }
+    #ex{
+        margin-left: 100px;
+    }
+    #j{
+        font-size: 17px;
+        margin-left: 10px;
+    }
+    #i{
+      margin-left: 20px;
+    }
+    .box figure{
+        width: 120px;
+    }
+    #u{
+        margin-left: 110px;
+    }
+    #kyoka br{
+        display: none;
+    }
+}
